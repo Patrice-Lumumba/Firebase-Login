@@ -5,29 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     
 
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+  <div class="container">
+    <div class="login-left">
+      <div class="login-header">
+        <h1>Welcome</h1>
+        <p>Please login to use</p>
+      </div>
+      <form action="" class="login-form">
+        <div class="login-form-content">
+          <div class="form-item">
+            <label for="email">Enter Email</label>
+            <input type="text" id="email">
+          </div>
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyAcjgxOdPwPQO3jjxL4HhbykYBuwUuphzU",
-    authDomain: "babillard-app-af8fb.firebaseapp.com",
-    projectId: "babillard-app-af8fb",
-    storageBucket: "babillard-app-af8fb.appspot.com",
-    messagingSenderId: "791019185506",
-    appId: "1:791019185506:web:cb02b58dc71c6bbdc4783b"
-  };
+          <div class="form-item">
+            <label for="password">Enter Password</label>
+            <input type="password" id="password">
+          </div>
+          <div class="form-item">
+            <div class="checkbox">
+              <input type="checkbox" name="" id="rememberMeCheckbox" checked>
+              <label for="rememberMeCheckbox" class="checkboxLabel">Remember me</label>
+            </div>
+          </div>
+          <button type="submit">Sign in</button>
+        </div>
+        <div class="login-form-footer">
+          <a href="#">
+            <img width="30" 
+              src="./img/facebook.png"
+              alt="facebook">
+          </a>
+          <a href="#">
+            <img width="30" 
+              src="./img/google.png"
+              alt="facebook">
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="login-right">
+      <img src="./img/image.svg">
+    </div>
+  </div>
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
+
+  <script type="module" src="index.js"></script>
 </body>
 </html>
